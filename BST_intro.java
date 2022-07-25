@@ -12,7 +12,7 @@ class BST{
         a.data=k;
         a.left=null;
         a.right = null; 
-        
+
         return a; 
     }
 
@@ -22,7 +22,7 @@ class BST{
         }
         else{
             if( val <= node.data){
-                node.left = insert(node, val); //Recursively doing it.
+                node.left = insert(node, val); //Recursively adding the new item at the appropiate position.
             }
 
             else if(val > node.data){
@@ -42,6 +42,13 @@ public class BST_intro {
 
         root = myBst.insert(root, 8);
         root = myBst.insert(root, 10);
+        root = myBst.insert(root, 3);
+        root = myBst.insert(root, 9);
+        root = myBst.insert(root, 12);
+        root = myBst.insert(root, 1);
+        root = myBst.insert(root, 4);
+        root = myBst.insert(root, 14);
+        root = myBst.insert(root, 19);
 
     }
 }
