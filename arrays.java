@@ -6,7 +6,7 @@ public class arrays {
         colors[0] = "Purple";
         System.out.println(colors[0].charAt(2)); //r 
 
-        int numbers[] = {100,200};  
+        //int numbers[] = {100,200};  
         int[] numbers2 = {300,400}; 
                                     //BOTH Works above 
         for(int i:numbers2){
