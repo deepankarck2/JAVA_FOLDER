@@ -22,14 +22,18 @@ class BST{
         }
         else{
             if( val <= node.data){
-                node.left = insert(node, val); //Recursively adding the new item at the appropiate position.
+                node.left = insert(node.left, val); //Recursively adding the new item at the appropiate position.
             }
 
             else if(val > node.data){
-                node.right = insert(node, val); 
+                node.right = insert(node.right, val); 
             }
         }
         return node; 
+    }
+
+    public void inorder(Node root){
+
     }
 }
 
@@ -41,14 +45,14 @@ public class BST_intro {
         Node root = null; 
 
         root = myBst.insert(root, 8);
-        root = myBst.insert(root, 10);
         root = myBst.insert(root, 3);
-        root = myBst.insert(root, 9);
-        root = myBst.insert(root, 12);
-        root = myBst.insert(root, 1);
+        root = myBst.insert(root, 6);
+        root = myBst.insert(root, 10);
         root = myBst.insert(root, 4);
+        root = myBst.insert(root, 7);
+        root = myBst.insert(root, 1);
         root = myBst.insert(root, 14);
-        root = myBst.insert(root, 19);
+        root = myBst.insert(root, 13);
 
     }
 }
