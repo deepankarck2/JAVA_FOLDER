@@ -9,6 +9,9 @@ public class arrays {
         //int numbers[] = {100,200};  
         int[] numbers2 = {300,400}; 
                                     //BOTH Works above 
+
+        //int num2_size = numbers2.length;  //To get the length of an array
+
         for(int i:numbers2){
             System.out.print(i+" ");
         }
